@@ -273,6 +273,9 @@ class HookManager(object):
     self.mouse_hook = False
     self.key_hook = False
 
+    self.keyboard_hook = False
+    self.mouse_hook = False
+
   def __del__(self):
     '''Unhook all registered hooks.'''
     self.UnhookMouse()
